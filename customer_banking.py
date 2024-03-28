@@ -13,7 +13,7 @@ def main():
     # ADD YOUR CODE HERE
     print('\nSavings Account Calculator\n')
     
-    # Set variable to 0
+    # Set variable to 0 to use the try function.
     savings_balance = 0
     # Check for a balance greater than 0 and using try function and exception handling
     while savings_balance <= 0:
@@ -35,7 +35,7 @@ def main():
         except ValueError:
             print('Error: Please enter a valid number for the interest rate!')
             
-    # Set variable to zero.
+    # Set variable to zero to use the try function.
     savings_maturity = 0
     
     # Check for maturity greater than 0 using the try function and exception handling.
@@ -58,9 +58,9 @@ def main():
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
-    print('\nCD Account Calculator\n')
+    print('\nCertificate of Deposit Account Calculator\n')
     
-    # Set variable to 0.
+    # Set variable to 0 to use the try function.
     cd_balance = 0
     
     while cd_balance <= 0:
@@ -71,7 +71,7 @@ def main():
         except ValueError:
             print('Error: Please enter a valid number for the balance!')
     
-    # Set variable to 0.
+    # Set variable to 0 to use the try function.
     cd_interest = 0
     # Check for interest rate greater than 0 using the try function and exception handling.
     while cd_interest <= 0:
