@@ -16,9 +16,13 @@ def main():
     savings_interest = 0
     # Check for interest rate greater than 0.
     while savings_interest <= 0:
-        savings_interest = float(input('Enter the interest rate for your savings account: '))
-        if savings_interest <= 0:
-            print('Interst rate must be greater than 0')
+        try:
+            savings_interest = float(input('Enter the interest rate for your savings account: '))
+            if savings_interest <= 0:
+                print('Interst rate must be greater than 0')
+        except ValueError:
+            print('Error: Please enter a valid number for the interest rate.')
+            
     savings_maturity = int(input('Enter the number of months for your savings account: '))
 
     # Call the create_savings_account function and pass the variables from the user.
@@ -37,9 +41,13 @@ def main():
     cd_interest = 0
     # Check for interest rate greater than 0.
     while cd_interest <= 0:
-        cd_interest = float(input('Enter the interest rate greater for the CD account: '))
-        if cd_interest <= 0:
-            print('Interest rate must be greater than 0')
+        try:
+            cd_interest = float(input('Enter the interest rate greater for the CD account: '))
+            if cd_interest <= 0:
+                print('Interest rate must be greater than 0')
+        except ValueError:
+            print('Error: Please enter a valid number for the interest rate.')
+        
     cd_maturity = int(input('Enter the number of months for the CD: '))
 
     # Call the create_cd_account function and pass the variables from the user.
