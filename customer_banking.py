@@ -13,29 +13,39 @@ def main():
     # ADD YOUR CODE HERE
     print('\nSavings Account Calculator\n')
     
-    # set variable to 0
+    # Set variable to 0
     savings_balance = 0
     # Check for a balance greater than 0 and using try function and exception handling
     while savings_balance <= 0:
         try:
             savings_balance = float(input('Enter your savings account balance: '))
             if savings_balance <= 0:
-                print('Balance must be greater than 0')
+                print('Balance must be greater than zero!')
         except ValueError:
-            print('Error: Please enter a valid number for the balance')
+            print('Error: Please enter a valid number for the balance!')
     
-    #set variable to 0.
+    # Set variable to 0.
     savings_interest = 0
-    # Check for interest rate greater than 0 using try function and exception handling.
+    # Check for interest rate greater than 0 using the try function and exception handling.
     while savings_interest <= 0:
         try:
             savings_interest = float(input('Enter the interest rate for your savings account: '))
             if savings_interest <= 0:
-                print('Interst rate must be greater than 0')
+                print('Interest rate must be greater than zero!')
         except ValueError:
-            print('Error: Please enter a valid number for the interest rate.')
+            print('Error: Please enter a valid number for the interest rate!')
             
-    savings_maturity = int(input('Enter the number of months for your savings account: '))
+    # Set variable to zero.
+    savings_maturity = 0
+    
+    # Check for maturity greater than 0 using the try function and exception handling.
+    while savings_maturity <= 0:
+        try:
+            savings_maturity = int(input('Enter the number of months for your savings account: '))
+            if savings_maturity <= 0:
+                print('Maturity must be greater than zero!')
+        except ValueError:
+            print('Error: Please enter a valid number for the maturity!')
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -57,22 +67,32 @@ def main():
         try:
             cd_balance = float(input('Enter the CD account balance: '))
             if cd_balance <= 0:
-                print('alance must be greater than 0')
+                print('Balance must be greater than zero!')
         except ValueError:
-            print('Error: Please enter a valid number for the balance.')
+            print('Error: Please enter a valid number for the balance!')
     
-    # set variable to 0.
+    # Set variable to 0.
     cd_interest = 0
     # Check for interest rate greater than 0 using the try function and exception handling.
     while cd_interest <= 0:
         try:
             cd_interest = float(input('Enter the interest rate greater for the CD account: '))
             if cd_interest <= 0:
-                print('Interest rate must be greater than 0')
+                print('Interest rate must be greater than zero!')
         except ValueError:
-            print('Error: Please enter a valid number for the interest rate.')
-        
-    cd_maturity = int(input('Enter the number of months for the CD: '))
+            print('Error: Please enter a valid number for the interest rate!')
+    
+    # Set variable to 0
+    cd_maturity = 0
+    
+    # Check for maturity greater than 0 using the try function and exception handling.
+    while cd_maturity <= 0:
+        try:
+            cd_maturity = int(input('Enter the number of months for the CD: '))
+            if cd_maturity <= 0:
+                print('Maturity must be greater than zero!')
+        except ValueError:
+            print('Error: Please enter a valid number for the maturity!')
 
     # Call the create_cd_account function and pass the variables from the user.
     updated_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
