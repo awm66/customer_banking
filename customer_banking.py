@@ -12,9 +12,21 @@ def main():
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
     print('\nSavings Account Calculator\n')
-    savings_balance = float(input('Enter your savings account balance: '))
+    
+    # set variable to 0
+    savings_balance = 0
+    # Check for a balance greater than 0 and using try function and exception handling
+    while savings_balance <= 0:
+        try:
+            savings_balance = float(input('Enter your savings account balance: '))
+            if savings_balance <= 0:
+                print('Balance must be greater than 0')
+        except ValueError:
+            print('Error: Please enter a valid number for the balance')
+    
+    #set variable to 0.
     savings_interest = 0
-    # Check for interest rate greater than 0.
+    # Check for interest rate greater than 0 using try function and exception handling.
     while savings_interest <= 0:
         try:
             savings_interest = float(input('Enter the interest rate for your savings account: '))
@@ -37,9 +49,21 @@ def main():
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
     print('\nCD Account Calculator\n')
-    cd_balance = float(input('Enter the CD account balance: '))
+    
+    # Set variable to 0.
+    cd_balance = 0
+    
+    while cd_balance <= 0:
+        try:
+            cd_balance = float(input('Enter the CD account balance: '))
+            if cd_balance <= 0:
+                print('alance must be greater than 0')
+        except ValueError:
+            print('Error: Please enter a valid number for the balance.')
+    
+    # set variable to 0.
     cd_interest = 0
-    # Check for interest rate greater than 0.
+    # Check for interest rate greater than 0 using the try function and exception handling.
     while cd_interest <= 0:
         try:
             cd_interest = float(input('Enter the interest rate greater for the CD account: '))
