@@ -18,7 +18,7 @@ def main():
     # Check for a balance greater than 0 and using try function and exception handling
     while savings_balance <= 0:
         try:
-            savings_balance = float(input('Enter your savings account balance: '))
+            savings_balance = float(input('Enter your savings account balance: $'))
             if savings_balance <= 0:
                 print('Balance must be greater than zero!')
         except ValueError:
@@ -29,7 +29,7 @@ def main():
     # Check for interest rate greater than 0 using the try function and exception handling.
     while savings_interest <= 0:
         try:
-            savings_interest = float(input('Enter the interest rate for your savings account: '))
+            savings_interest = float(input('Enter the interest rate % for your savings account: '))
             if savings_interest <= 0:
                 print('Interest rate must be greater than zero!')
         except ValueError:
@@ -65,7 +65,7 @@ def main():
     
     while cd_balance <= 0:
         try:
-            cd_balance = float(input('Enter the CD account balance: '))
+            cd_balance = float(input('Enter the CD account balance: $'))
             if cd_balance <= 0:
                 print('Balance must be greater than zero!')
         except ValueError:
@@ -76,7 +76,7 @@ def main():
     # Check for interest rate greater than 0 using the try function and exception handling.
     while cd_interest <= 0:
         try:
-            cd_interest = float(input('Enter the interest rate greater for the CD account: '))
+            cd_interest = float(input('Enter the interest rate % greater for the CD account: '))
             if cd_interest <= 0:
                 print('Interest rate must be greater than zero!')
         except ValueError:
