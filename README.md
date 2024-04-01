@@ -2,8 +2,9 @@
 Week 3 Challenge
 
 # Functionality:
-This customer banking application permits users to calculate interest earned on both savings and Certificate of Deposit (CD) accounts. By launching the customer_banking.py file, users will be able to enter the balance, the interest rate, and the number of months. The application returns the updated balances and the interest earned after the specified number of months.
+This customer banking application permits users to calculate interest earned on both savings and Certificate of Deposit (CD) accounts. By launching the customer_banking.py file, users will be able to enter the balance, the interest rate, and the number of months for each product. The application returns the updated balances and the interest earned after the specified number of months.
 
+/Users/awm/customer_banking/Customer Banking Screenshot.png
 ![Macro Image](Customer Banking Screenshot.png)
 
 # Design:
